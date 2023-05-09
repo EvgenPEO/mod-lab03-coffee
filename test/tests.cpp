@@ -1,3 +1,4 @@
+// Copyright 2022 GHA Test Team
 #include <gtest/gtest.h>
 #include "Automata.h"
 
@@ -25,4 +26,4 @@ TEST(task3, test3) {
 	coffeeMachine.verifyPayment();
 	int currentCash = coffeeMachine.getCash();
 	EXPECT_EQ(30, currentCash);
-}
+} 

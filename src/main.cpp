@@ -1,3 +1,4 @@
+// Copyright 2022 UNN-IASR
 #include <iostream>
 #include "Automata.h"
 
@@ -12,4 +13,4 @@ int main() {
 	coffeeMachine.prepareItem();
 	coffeeMachine.turnOff();
 	return 0;
-}
+} 

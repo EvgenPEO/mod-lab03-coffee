@@ -1,3 +1,4 @@
+// Copyright 2022 UNN-IASR
 #ifndef INCLUDE_AUTOMATA_H_
 #define INCLUDE_AUTOMATA_H_
 #include <string>
@@ -12,7 +13,7 @@ enum State {
 };
 
 class Automata {
-public:
+ public:
     Automata();
     void setState(State state);
     void setCash(int cash);
@@ -26,7 +27,7 @@ public:
     int turnOn();
     int turnOff();
 
-private:
+ private:
     int cash;
     std::vector<std::string> menu;
     std::vector<int> prices;
@@ -35,4 +36,4 @@ private:
     int cancelTransaction();
     int finishTransaction();
 };
-#endif
+#endif // INCLUDE_AUTOMATA_H_

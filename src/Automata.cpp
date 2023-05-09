@@ -1,3 +1,4 @@
+// Copyright 2022 UNN-IASR
 #include "Automata.h"
 #include <iostream>
 
@@ -44,8 +45,7 @@ int Automata::insertCoin(int rub) {
         setCash(rub);
         setState(ACCEPT);
         return rub;
-    }
-    else {
+    } else {
         std::cout << "error " << std::endl;
         return 0;
     }
@@ -68,8 +68,7 @@ int Automata::selectItem() {
         std::cout << "Selected item: " << menu[1] << std::endl;
         setState(CHECK);
         return 1;
-    }
-    else {
+    } else {
         return 0;
     }
 }
@@ -78,8 +77,7 @@ int Automata::verifyPayment() {
     if (state == CHECK) {
         if (cash >= prices[1]) {
             cash = cash - prices[1];
-        }
-        else {
+        } else {
             std::cout << "error " << std::endl;
         }
         return 0;
@@ -98,8 +96,7 @@ int Automata::prepareItem() {
         setState(COOK);
         if (cash > 0) {
             std::cout << "Take your change : " << cash << std::endl;
-        }
-        else {
+        } else {
             std::cout << "error " << std::endl;
         }
         finishTransaction();
